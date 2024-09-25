@@ -1,0 +1,12 @@
+```
+┌(bsjames@bsjames-fedora-PC2BDMWS)-[~]
+└─$ python3 ./junos9decode.py '$9$4OoDkzF/CtOz30IcSW8X7-b2aji.mT3-VDkq.F31RhSrv'
+junos password decrypter
+Original python 2.7 version by matt hite
+lazily converted to python 3 by Brandon James
+original perl version by kevin brintnall
+
+encrypted version: $9$4OoDkzF/CtOz30IcSW8X7-b2aji.mT3-VDkq.F31RhSrv
+$9$4OoDkzF/CtOz30IcSW8X7-b2aji.mT3-VDkq.F31RhSrv
+decrypted version: thisisanexample
+```
