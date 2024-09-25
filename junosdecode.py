@@ -96,8 +96,8 @@ def main():
 
     encrypted_string = args[0]
     print("junos password decrypter")
-    print("lazily converted to python3 by Brandon James")
-    print("python version by matt hite")
+    print("Original python 2.7 version by matt hite")
+    print("lazily converted to python 3 by Brandon James")
     print("original perl version by kevin brintnall\n")
     print("encrypted version: %s" % encrypted_string)
     print("decrypted version: %s" % juniper_decrypt(encrypted_string))
