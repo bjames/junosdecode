@@ -22,8 +22,12 @@ MAGIC = "$9$"
 ###################################
 ## letter families
 
-FAMILY = ["QzF3n6/9CAtpu0O", "B1IREhcSyrleKvMW8LXx", "7N-dVbwsY2g4oaJZGUDj", "iHkq.mPf5T
-"]
+FAMILY = [
+    "QzF3n6/9CAtpu0O",
+    "B1IREhcSyrleKvMW8LXx",
+    "7N-dVbwsY2g4oaJZGUDj",
+    "iHkq.mPf5T",
+]
 EXTRA = dict()
 for x, item in enumerate(FAMILY):
     for c in item:
@@ -38,8 +42,15 @@ ALPHA_NUM = {NUM_ALPHA[x]: x for x in range(0, len(NUM_ALPHA))}
 ###################################
 ## encoding moduli by position
 
-ENCODING = [[1, 4, 32], [1, 16, 32], [1, 8, 32], [1, 64], [1, 32], [1, 4, 16, 128], [1,
-32, 64]]
+ENCODING = [
+    [1, 4, 32],
+    [1, 16, 32],
+    [1, 8, 32],
+    [1, 64],
+    [1, 32],
+    [1, 4, 16, 128],
+    [1, 32, 64],
+]
 
 
 def _nibble(cref, length):
@@ -85,8 +96,9 @@ def juniper_decrypt(crypt):
 
 
 def main():
-    parser = OptionParser(usage="usage: %prog [options] encrypted_string",
-                          version="1.0")
+    parser = OptionParser(
+        usage="usage: %prog [options] encrypted_string", version="1.0"
+    )
 
     (options, args) = parser.parse_args()
 
@@ -101,6 +113,7 @@ def main():
     print("original perl version by kevin brintnall\n")
     print("encrypted version: %s" % encrypted_string)
     print("decrypted version: %s" % juniper_decrypt(encrypted_string))
+
 
 if __name__ == "__main__":
     main()
